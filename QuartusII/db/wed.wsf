@@ -20,13 +20,13 @@ Altera or its authorized distributors.  Please refer to the
 applicable agreement for further details.
 */
 
-VECTOR("D:/IVAN/UTN/Cosas/System on Chip/Proyecto/extrapolacioon-1.vwf")
+VECTOR("C:/Altera/qdesigns/gnextrapolator/gnextrapolator.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 250000;
-		NUMERATOR = 608;
-		DENOMINATOR = 250000;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -38,7 +38,7 @@ VECTOR("D:/IVAN/UTN/Cosas/System on Chip/Proyecto/extrapolacioon-1.vwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "reloj";
+		SIGNAL = "clk_i";
 		INDEX = 0;
 		FORMAT = E;
 		SCALE = 1;
@@ -46,7 +46,7 @@ VECTOR("D:/IVAN/UTN/Cosas/System on Chip/Proyecto/extrapolacioon-1.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "start";
+		SIGNAL = "rst_i";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -54,1877 +54,7 @@ VECTOR("D:/IVAN/UTN/Cosas/System on Chip/Proyecto/extrapolacioon-1.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx";
-		INDEX = 2;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[13]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[12]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[11]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[10]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[9]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[8]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[7]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[6]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[5]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[4]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[3]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[2]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[1]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[0]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1";
-		INDEX = 17;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[13]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[12]";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[11]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[10]";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[9]";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[8]";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[7]";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[6]";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[5]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[4]";
-		INDEX = 27;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[3]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[2]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[1]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[0]";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2";
-		INDEX = 32;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[13]";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[12]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[11]";
-		INDEX = 35;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[10]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[9]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[8]";
-		INDEX = 38;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[7]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[6]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[5]";
-		INDEX = 41;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[4]";
-		INDEX = 42;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[3]";
-		INDEX = 43;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[2]";
-		INDEX = 44;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[1]";
-		INDEX = 45;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[0]";
-		INDEX = 46;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3";
-		INDEX = 47;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[13]";
-		INDEX = 48;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[12]";
-		INDEX = 49;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[11]";
-		INDEX = 50;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[10]";
-		INDEX = 51;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[9]";
-		INDEX = 52;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[8]";
-		INDEX = 53;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[7]";
-		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[6]";
-		INDEX = 55;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[5]";
-		INDEX = 56;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[4]";
-		INDEX = 57;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[3]";
-		INDEX = 58;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[2]";
-		INDEX = 59;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[1]";
-		INDEX = 60;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[0]";
-		INDEX = 61;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4";
-		INDEX = 62;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[13]";
-		INDEX = 63;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[12]";
-		INDEX = 64;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[11]";
-		INDEX = 65;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[10]";
-		INDEX = 66;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[9]";
-		INDEX = 67;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[8]";
-		INDEX = 68;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[7]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[6]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[5]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[4]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[3]";
-		INDEX = 73;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[2]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[1]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[0]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul";
-		INDEX = 77;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[13]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[12]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[11]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[10]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[9]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[8]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[7]";
-		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[6]";
-		INDEX = 85;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[5]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[4]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[3]";
-		INDEX = 88;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[2]";
-		INDEX = 89;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[1]";
-		INDEX = 90;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[0]";
-		INDEX = 91;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii";
-		INDEX = 92;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[13]";
-		INDEX = 93;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[12]";
-		INDEX = 94;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[11]";
-		INDEX = 95;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[10]";
-		INDEX = 96;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[9]";
-		INDEX = 97;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[8]";
-		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[7]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[6]";
-		INDEX = 100;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[5]";
-		INDEX = 101;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[4]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[3]";
-		INDEX = 103;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[2]";
-		INDEX = 104;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[1]";
-		INDEX = 105;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[0]";
-		INDEX = 106;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
-VECTOR("D:/IVAN/UTN/Cosas/System on Chip/Proyecto/extrapolacioon.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 104235;
-		NUMERATOR = 608;
-		DENOMINATOR = 104235;
-		TOP_INDEX = 77;
-	}
-	CLOCK{
-		PERIOD = 10000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "reloj";
-		INDEX = 0;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "start";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos";
-		INDEX = 2;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[13]";
-		INDEX = 3;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[12]";
-		INDEX = 4;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[11]";
-		INDEX = 5;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[10]";
-		INDEX = 6;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[9]";
-		INDEX = 7;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[8]";
-		INDEX = 8;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[7]";
-		INDEX = 9;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[6]";
-		INDEX = 10;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[5]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[4]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[3]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[2]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[1]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "datos[0]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii";
-		INDEX = 17;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[13]";
-		INDEX = 18;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[12]";
-		INDEX = 19;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[11]";
-		INDEX = 20;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[10]";
-		INDEX = 21;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[9]";
-		INDEX = 22;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[8]";
-		INDEX = 23;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[7]";
-		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[6]";
-		INDEX = 25;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[5]";
-		INDEX = 26;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[4]";
-		INDEX = 27;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[3]";
-		INDEX = 28;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[2]";
-		INDEX = 29;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[1]";
-		INDEX = 30;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ii[0]";
-		INDEX = 31;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx";
-		INDEX = 32;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[13]";
-		INDEX = 33;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[12]";
-		INDEX = 34;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[11]";
-		INDEX = 35;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[10]";
-		INDEX = 36;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[9]";
-		INDEX = 37;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[8]";
-		INDEX = 38;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[7]";
-		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[6]";
-		INDEX = 40;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[5]";
-		INDEX = 41;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[4]";
-		INDEX = 42;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[3]";
-		INDEX = 43;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[2]";
-		INDEX = 44;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[1]";
-		INDEX = 45;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx[0]";
-		INDEX = 46;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1";
-		INDEX = 47;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[13]";
-		INDEX = 48;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[12]";
-		INDEX = 49;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[11]";
-		INDEX = 50;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[10]";
-		INDEX = 51;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[9]";
-		INDEX = 52;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[8]";
-		INDEX = 53;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[7]";
-		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[6]";
-		INDEX = 55;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[5]";
-		INDEX = 56;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[4]";
-		INDEX = 57;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[3]";
-		INDEX = 58;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[2]";
-		INDEX = 59;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[1]";
-		INDEX = 60;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1[0]";
-		INDEX = 61;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2";
-		INDEX = 62;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[13]";
-		INDEX = 63;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[12]";
-		INDEX = 64;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[11]";
-		INDEX = 65;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[10]";
-		INDEX = 66;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[9]";
-		INDEX = 67;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[8]";
-		INDEX = 68;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[7]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[6]";
-		INDEX = 70;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[5]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[4]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[3]";
-		INDEX = 73;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[2]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[1]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2[0]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3";
-		INDEX = 77;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[13]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[12]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[11]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[10]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[9]";
-		INDEX = 82;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[8]";
-		INDEX = 83;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[7]";
-		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[6]";
-		INDEX = 85;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[5]";
-		INDEX = 86;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[4]";
-		INDEX = 87;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[3]";
-		INDEX = 88;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[2]";
-		INDEX = 89;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[1]";
-		INDEX = 90;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[0]";
-		INDEX = 91;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4";
-		INDEX = 92;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[13]";
-		INDEX = 93;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[12]";
-		INDEX = 94;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[11]";
-		INDEX = 95;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[10]";
-		INDEX = 96;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[9]";
-		INDEX = 97;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[8]";
-		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[7]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[6]";
-		INDEX = 100;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[5]";
-		INDEX = 101;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[4]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[3]";
-		INDEX = 103;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[2]";
-		INDEX = 104;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[1]";
-		INDEX = 105;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[0]";
-		INDEX = 106;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul";
-		INDEX = 107;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[13]";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[12]";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[11]";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[10]";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[9]";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[8]";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[7]";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[6]";
-		INDEX = 115;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[5]";
-		INDEX = 116;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[4]";
-		INDEX = 117;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[3]";
-		INDEX = 118;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[2]";
-		INDEX = 119;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[1]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul[0]";
-		INDEX = 121;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-}
-
-VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
-{
-	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 75715;
-		NUMERATOR = 591;
-		DENOMINATOR = 68843;
-		TOP_INDEX = 24;
-	}
-	CLOCK{
-		PERIOD = 10000;
-		OFFSET = 0;
-		DUTY_CYCLE = 50;
-	}
-	RANDOM_VALUE{
-		INTERVAL_TYPE = HALF_GRID;
-	}
-	LINE{
-		SIGNAL = "data";
-		INDEX = 0;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "data[13]";
-		INDEX = 1;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "data[12]";
+		SIGNAL = "extrapolar_i";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -1932,15 +62,15 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[11]";
+		SIGNAL = "distancia_i";
 		INDEX = 3;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[10]";
+		SIGNAL = "distancia_i[4]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -1948,7 +78,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[9]";
+		SIGNAL = "distancia_i[3]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -1956,7 +86,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[8]";
+		SIGNAL = "distancia_i[2]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -1964,7 +94,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[7]";
+		SIGNAL = "distancia_i[1]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -1972,7 +102,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[6]";
+		SIGNAL = "distancia_i[0]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -1980,15 +110,15 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[5]";
+		SIGNAL = "fxx1_o";
 		INDEX = 9;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[4]";
+		SIGNAL = "fxx1_o[13]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -1996,7 +126,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[3]";
+		SIGNAL = "fxx1_o[12]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -2004,7 +134,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[2]";
+		SIGNAL = "fxx1_o[11]";
 		INDEX = 12;
 		FORMAT = E;
 		SCALE = 1;
@@ -2012,7 +142,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[1]";
+		SIGNAL = "fxx1_o[10]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -2020,7 +150,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data[0]";
+		SIGNAL = "fxx1_o[9]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -2028,15 +158,15 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia";
+		SIGNAL = "fxx1_o[8]";
 		INDEX = 15;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia[4]";
+		SIGNAL = "fxx1_o[7]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -2044,7 +174,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia[3]";
+		SIGNAL = "fxx1_o[6]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -2052,7 +182,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia[2]";
+		SIGNAL = "fxx1_o[5]";
 		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
@@ -2060,7 +190,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia[1]";
+		SIGNAL = "fxx1_o[4]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -2068,7 +198,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "distancia[0]";
+		SIGNAL = "fxx1_o[3]";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -2076,7 +206,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "extrapolar";
+		SIGNAL = "fxx1_o[2]";
 		INDEX = 21;
 		FORMAT = E;
 		SCALE = 1;
@@ -2084,7 +214,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "reloj";
+		SIGNAL = "fxx1_o[1]";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -2092,7 +222,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "start";
+		SIGNAL = "fxx1_o[0]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -2100,23 +230,23 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "we";
+		SIGNAL = "fxx2_o";
 		INDEX = 24;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "resul";
-		INDEX = 25;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[13]";
+		SIGNAL = "fxx2_o[13]";
+		INDEX = 25;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "fxx2_o[12]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -2124,7 +254,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[12]";
+		SIGNAL = "fxx2_o[11]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -2132,7 +262,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[11]";
+		SIGNAL = "fxx2_o[10]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -2140,7 +270,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[10]";
+		SIGNAL = "fxx2_o[9]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -2148,7 +278,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[9]";
+		SIGNAL = "fxx2_o[8]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -2156,7 +286,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[8]";
+		SIGNAL = "fxx2_o[7]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -2164,7 +294,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[7]";
+		SIGNAL = "fxx2_o[6]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -2172,7 +302,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[6]";
+		SIGNAL = "fxx2_o[5]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -2180,7 +310,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[5]";
+		SIGNAL = "fxx2_o[4]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -2188,7 +318,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[4]";
+		SIGNAL = "fxx2_o[3]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -2196,7 +326,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[3]";
+		SIGNAL = "fxx2_o[2]";
 		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
@@ -2204,7 +334,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[2]";
+		SIGNAL = "fxx2_o[1]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -2212,7 +342,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[1]";
+		SIGNAL = "fxx2_o[0]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -2220,23 +350,23 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "resul[0]";
+		SIGNAL = "fxx3_o";
 		INDEX = 39;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx";
-		INDEX = 40;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[13]";
+		SIGNAL = "fxx3_o[13]";
+		INDEX = 40;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "fxx3_o[12]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -2244,7 +374,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[12]";
+		SIGNAL = "fxx3_o[11]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -2252,7 +382,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[11]";
+		SIGNAL = "fxx3_o[10]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -2260,7 +390,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[10]";
+		SIGNAL = "fxx3_o[9]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -2268,7 +398,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[9]";
+		SIGNAL = "fxx3_o[8]";
 		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
@@ -2276,7 +406,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[8]";
+		SIGNAL = "fxx3_o[7]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -2284,7 +414,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[7]";
+		SIGNAL = "fxx3_o[6]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -2292,7 +422,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[6]";
+		SIGNAL = "fxx3_o[5]";
 		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
@@ -2300,7 +430,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[5]";
+		SIGNAL = "fxx3_o[4]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -2308,7 +438,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[4]";
+		SIGNAL = "fxx3_o[3]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -2316,7 +446,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[3]";
+		SIGNAL = "fxx3_o[2]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -2324,7 +454,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[2]";
+		SIGNAL = "fxx3_o[1]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -2332,7 +462,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[1]";
+		SIGNAL = "fxx3_o[0]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -2340,23 +470,23 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx[0]";
+		SIGNAL = "fxx4_o";
 		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx1";
-		INDEX = 55;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[13]";
+		SIGNAL = "fxx4_o[13]";
+		INDEX = 55;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "fxx4_o[12]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -2364,7 +494,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[12]";
+		SIGNAL = "fxx4_o[11]";
 		INDEX = 57;
 		FORMAT = E;
 		SCALE = 1;
@@ -2372,7 +502,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[11]";
+		SIGNAL = "fxx4_o[10]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -2380,7 +510,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[10]";
+		SIGNAL = "fxx4_o[9]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -2388,7 +518,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[9]";
+		SIGNAL = "fxx4_o[8]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -2396,7 +526,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[8]";
+		SIGNAL = "fxx4_o[7]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -2404,7 +534,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[7]";
+		SIGNAL = "fxx4_o[6]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -2412,7 +542,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[6]";
+		SIGNAL = "fxx4_o[5]";
 		INDEX = 63;
 		FORMAT = E;
 		SCALE = 1;
@@ -2420,7 +550,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[5]";
+		SIGNAL = "fxx4_o[4]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -2428,7 +558,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[4]";
+		SIGNAL = "fxx4_o[3]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -2436,7 +566,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[3]";
+		SIGNAL = "fxx4_o[2]";
 		INDEX = 66;
 		FORMAT = E;
 		SCALE = 1;
@@ -2444,7 +574,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[2]";
+		SIGNAL = "fxx4_o[1]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -2452,7 +582,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[1]";
+		SIGNAL = "fxx4_o[0]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -2460,23 +590,23 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx1[0]";
+		SIGNAL = "fxx_o";
 		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx2";
-		INDEX = 70;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[13]";
+		SIGNAL = "fxx_o[13]";
+		INDEX = 70;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "fxx_o[12]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -2484,7 +614,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[12]";
+		SIGNAL = "fxx_o[11]";
 		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
@@ -2492,7 +622,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[11]";
+		SIGNAL = "fxx_o[10]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -2500,7 +630,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[10]";
+		SIGNAL = "fxx_o[9]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -2508,7 +638,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[9]";
+		SIGNAL = "fxx_o[8]";
 		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
@@ -2516,7 +646,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[8]";
+		SIGNAL = "fxx_o[7]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -2524,7 +654,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[7]";
+		SIGNAL = "fxx_o[6]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -2532,7 +662,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[6]";
+		SIGNAL = "fxx_o[5]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -2540,7 +670,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[5]";
+		SIGNAL = "fxx_o[4]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -2548,7 +678,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[4]";
+		SIGNAL = "fxx_o[3]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -2556,7 +686,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[3]";
+		SIGNAL = "fxx_o[2]";
 		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
@@ -2564,7 +694,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[2]";
+		SIGNAL = "fxx_o[1]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -2572,7 +702,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[1]";
+		SIGNAL = "fxx_o[0]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -2580,23 +710,23 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx2[0]";
+		SIGNAL = "resul_o";
 		INDEX = 84;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3";
-		INDEX = 85;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[13]";
+		SIGNAL = "resul_o[13]";
+		INDEX = 85;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "resul_o[12]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -2604,7 +734,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[12]";
+		SIGNAL = "resul_o[11]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -2612,7 +742,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[11]";
+		SIGNAL = "resul_o[10]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -2620,7 +750,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[10]";
+		SIGNAL = "resul_o[9]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -2628,7 +758,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[9]";
+		SIGNAL = "resul_o[8]";
 		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
@@ -2636,7 +766,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[8]";
+		SIGNAL = "resul_o[7]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -2644,7 +774,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[7]";
+		SIGNAL = "resul_o[6]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -2652,7 +782,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[6]";
+		SIGNAL = "resul_o[5]";
 		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
@@ -2660,7 +790,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[5]";
+		SIGNAL = "resul_o[4]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -2668,7 +798,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[4]";
+		SIGNAL = "resul_o[3]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -2676,7 +806,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[3]";
+		SIGNAL = "resul_o[2]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -2684,7 +814,7 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[2]";
+		SIGNAL = "resul_o[1]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -2692,256 +822,8 @@ VECTOR("D:/IVAN/UTN/Cosas/LCR/System on Chip/Proyecto/extrapolacioon.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "fxx3[1]";
+		SIGNAL = "resul_o[0]";
 		INDEX = 98;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx3[0]";
-		INDEX = 99;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4";
-		INDEX = 100;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[13]";
-		INDEX = 101;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[12]";
-		INDEX = 102;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[11]";
-		INDEX = 103;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[10]";
-		INDEX = 104;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[9]";
-		INDEX = 105;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[8]";
-		INDEX = 106;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[7]";
-		INDEX = 107;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[6]";
-		INDEX = 108;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[5]";
-		INDEX = 109;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[4]";
-		INDEX = 110;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[3]";
-		INDEX = 111;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[2]";
-		INDEX = 112;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[1]";
-		INDEX = 113;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "fxx4[0]";
-		INDEX = 114;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p";
-		INDEX = 115;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[13]";
-		INDEX = 116;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[12]";
-		INDEX = 117;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[11]";
-		INDEX = 118;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[10]";
-		INDEX = 119;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[9]";
-		INDEX = 120;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[8]";
-		INDEX = 121;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[7]";
-		INDEX = 122;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[6]";
-		INDEX = 123;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[5]";
-		INDEX = 124;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[4]";
-		INDEX = 125;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[3]";
-		INDEX = 126;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[2]";
-		INDEX = 127;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[1]";
-		INDEX = 128;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "indice_p[0]";
-		INDEX = 129;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

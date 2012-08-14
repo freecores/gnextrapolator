@@ -1,33 +1,19 @@
-MED
-D:\IVAN\UTN\Cosas\LCR\System on Chip\Proyecto\Mif1.mif
-
-	Undo Commands
-	     1.	Change Memory Radix
-	     2.	Change Memory Radix
-	     3.	Change Memory Radix
-	     4.	Change Memory Radix
-	     5.	Cells
-	     6.	Cells
-	     7.	Cells
-	     8.	Cells
-	     9.	Cells
-
-
 RPW
 
 	Undo Commands
 	     1.	||Compilation Report||Flow Summary
-
-
-RPW
-
-	Undo Commands
-	     1.	||Simulation Report||Simulator||Simulation Waveforms
+	     2.	||Compilation Report||Analysis & Synthesis||Analysis & Synthesis Messages
+	     3.	||Compilation Report||Analysis & Synthesis||Analysis & Synthesis Summary
+	     4.	||Compilation Report||Flow Summary
 
 
 WED
 
 	Undo Commands
-	     1.	Delete Node, Bus or Waveform Divider
+	     1.	Drop Node
+			 *** 
+	     2.	Drop Node
+			 *** 
+	     3.	Insert Node or Bus
 
 
